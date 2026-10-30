@@ -372,7 +372,7 @@ function renderTimer() {
     <button data-act="tmode" data-m="sw" class="${S.tmode === 'sw' ? 'on' : ''}">Stopwatch</button></div>`;
   if (S.tmode === 'rest') {
     const running = !!S.timerEnd;
-    const presets = [30, 45, 60, 90, 120, 150, 180, 240, 300];
+    const presets = [600, 900, 1200];
     $('#main').innerHTML = `${seg}
       <div class="bigclock ${S.timerDone ? 'done' : ''}"><div id="bigTime">${running ? '' : mmss(S.settings.rest)}</div><div class="bigtrack"><div id="bigBar"></div></div></div>
       <div class="btns">${running
